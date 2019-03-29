@@ -1,105 +1,799 @@
+
 <!doctype html>
 <html>
 <head>
-  <title> Componente : card (grupo de tarjetas)</title> 
+  <title>Modelo: OSI</title> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+<body style=  "background-image: url(OSI.png)">
   <div class="container">   
-    <div class="card-group mt-3"><!--Recordar que la clase "mt-3" define un margen en la parte superior de 3rem ([m]argen [t]op-->
-
-      <div class="card text-center border-info">
-        <div class="card-body">
-          <h4 class="card-title">Titulo de la tarjeta 1</h4>
-          <p class="card-text">Bootstrap 4 permite agrupar un conjunto de tarjetas las cuales se verán con anchos y alturas iguales.Para resolver esto anidamos todas las tarjetas en un div que defina la clase "card-group".</p>
-          <a href="#" class="btn btn-primary">Entrar</a>
+    <div class="row mt-3">
+          
+          <div class="col-md">        
+          <div class="card text-center">
+                <div class="card-header">
+              Definicion
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Modelo OSI</h4>
+              <p class="card-text">El modelo de interconexión de sistemas abiertos (ISO/IEC 7498-1), más conocido como “modelo OSI”, (en inglés, Open System Interconnection) es un modelo de referencia para los protocolos de la red (no es una arquitectura de red), creado en el año 1980 por la Organización Internacional de Normalización (ISO).1​ Se ha publicado desde 1983 por la Unión Internacional de Telecomunicaciones (UIT) y, desde 1984, la Organización Internacional de Normalización (ISO) también lo publicó con estándar.2​ Su desarrollo comenzó en 1977.</p>
+            </div>
+              <div class="card-footer">
+              <a href="#" class="btn btn-primary">Ver mas</a>
+              <div class="modal fade" id="dialogo1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+              <div class="container-fluid">   
+                  <div class="row">       
+                    <div class="col">        
+                        <div class="card">
+                         <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 1</h3>
+              <p>Un "carousel" es una componente que muestra un conjunto de diapositivas (imágenes generalmente), avanza en forma automática cada diapositiva y luego de la última pasa a mostrar la primera.   
+Requiere tanto de CSS como Javascript..</p>
+            </div>
         </div>
-      </div>          
-
-      <div class="card text-center border-info">
-        <div class="card-body">
-          <h4 class="card-title">Titulo de la tarjeta 2</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
-                                tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
-                                nec tortor sit amet, maximus mattis dui. </p>
-          <a href="#" class="btn btn-primary">Entrar</a>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="BMD/img/cuadro2.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 2</h3>
+              <p>Podemos opcionalmente activar dos botones a izquierda y derecha para que el usuario pueda retroceder o avanzar diapositivas. Además de unos pequeños indicadores para elegir cualquiera de las imágenes.</p>
+            </div>
         </div>
-      </div>          
-  
-      <div class="card text-center border-info">
-        <div class="card-body">
-          <h4 class="card-title">Titulo de la tarjeta 3</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
-                                tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
-                                nec tortor sit amet, maximus mattis dui. </p>
-          <a href="#" class="btn btn-primary">Entrar</a>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 3</h3>
+              <p>Descripción de la imagen.</p>
+            </div>
         </div>
-      </div>          
+             <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 4</h3>
+              <p>Descripción de la imagen.</p>
+            </div> 
+        </div>
+      </div>
+      <!-- botones de desplazamiento a izquierda y derecha -->      
+      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-  </div><br>
-    <div class="container">   
-    <div class="card-deck">
-      <div class="card text-center border-info">
-        <div class="card-body">
-          <h4 class="card-title">Tarjetas separadas.</h4>
-          <p class="card-text">
-Si necesitamos que las tarjetas se encuentren separadas en lugar de utilizar la clase "card-group" la remplazamos por la clase "card-deck".</p>
-          <a href="#" class="btn btn-primary">Entrar</a>
+                        </div>          
+                    </div>
+                  </div>
+                </div>            
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
         </div>
-      </div>          
+      </div>
+    </div> 
+            </div>
+          </div>          
+      </div>
+      
+      <div class="col-md">        
+          <div class="card text-center">
+            <div class="card-header">
+              Primera Capa
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Capa física</h4>
+              <p class="card-text">Es la capa más baja del modelo OSI. Es la que se encarga de la topología de red y de las conexiones globales de la computadora hacia la red, se refiere tanto al medio físico como a la forma en la que se transmite la información.5​
 
-      <div class="card text-center border-info">
-        <div class="card-body">
-          <h4 class="card-title">Tarjetas que se muestran por columna.</h4>
-          <p class="card-text">Podemos hacer que las tarjetas se apilen por columna cambiando la clase "card-group" por la clase "card-columns".</p>
-          <a href="#" class="btn btn-primary">Entrar</a>
+Sus principales funciones se pueden resumir como:
+
+Definir el medio o medios físicos por los que va a viajar la comunicación: cable de pares trenzados (o no, como en RS232/EIA232), cable coaxial, guías de onda, aire, fibra óptica.
+Definir las características materiales (componentes y conectores mecánicos) y eléctricas (niveles de tensión) que se van a usar en la transmisión de los datos por los medios físicos.
+Definir las características funcionales de la interfaz (establecimiento, mantenimiento y liberación del enlace físico).
+Transmitir el flujo de bits a través del medio.
+Manejar las señales eléctricas del medio de transmisión, polos en un enchufe, etc.
+Garantizar la conexión (aunque no la fiabilidad de dicha conexión)</p>
+             
+            </div>
+            <div class="card-footer">
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#dialogo1">Ver mas</button>
+                  
+                  <div class="modal fade" id="dialogo1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+              <div class="container-fluid">   
+                  <div class="row">       
+                    <div class="col">        
+                        <div class="card">
+                         <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 1</h3>
+              <p>Un "carousel" es una componente que muestra un conjunto de diapositivas (imágenes generalmente), avanza en forma automática cada diapositiva y luego de la última pasa a mostrar la primera.   
+Requiere tanto de CSS como Javascript..</p>
+            </div>
         </div>
-      </div>          
-  
-      <div class="card text-center border-info">
-        <div class="card-body">
-          <h4 class="card-title">Titulo de la tarjeta 3</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
-                                tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
-                                nec tortor sit amet, maximus mattis dui. </p>
-          <a href="#" class="btn btn-primary">Entrar</a>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="BMD/img/cuadro2.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 2</h3>
+              <p>Podemos opcionalmente activar dos botones a izquierda y derecha para que el usuario pueda retroceder o avanzar diapositivas. Además de unos pequeños indicadores para elegir cualquiera de las imágenes.</p>
+            </div>
         </div>
-      </div>          
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 3</h3>
+              <p>Descripción de la imagen.</p>
+            </div>
+        </div>
+             <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 4</h3>
+              <p>Descripción de la imagen.</p>
+            </div> 
+        </div>
+      </div>
+      <!-- botones de desplazamiento a izquierda y derecha -->      
+      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+                        </div>          
+                    </div>
+                  </div>
+                </div>            
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
+            </div>
+          </div>          
+      </div>
+
+      <div class="col-md">        
+          <div class="card text-center">
+            <div class="card-header">
+              Segunda Capa
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Capa de enlace de datos</h4>
+              <p class="card-text">Esta capa se ocupa del direccionamiento físico, del acceso al medio, de la detección de errores, de la distribución ordenada de tramas y del control del flujo.6​
+Es uno de los aspectos más importantes que revisar en el momento de conectar dos ordenadores, ya que está entre la capa 1 y 3 como parte esencial para la creación de sus protocolos básicos (MAC, IP), para regular la forma de la conexión entre computadoras, determinando el paso de tramas (unidad de medida de la información en esta capa, que no es más que la segmentación de los datos trasladándolos por medio de paquetes), verificando su integridad, y corrigiendo errores.
+Por lo cual es importante mantener una excelente adecuación al medio físico (los más usados son el cable UTP, par trenzado o de 8 hilos), con el medio de red que redirecciona las conexiones mediante un router.
+Dadas estas situaciones cabe recalcar que el dispositivo que usa la capa de enlace es el Switch que se encarga de recibir los datos del router y enviar cada uno de estos a sus respectivos destinatarios (servidor -> computador cliente o algún otro dispositivo que reciba información como teléfonos móviles, tabletas y diferentes dispositivos con acceso a la red, etc.), dada esta situación se determina como el medio que se encarga de la corrección de errores, manejo de tramas, protocolización de datos (se llaman protocolos a las "reglas de cortesía" o convenciones que debe seguir cualquier capa del modelo OSI).</p>
+            </div>
+                <div class="card-footer">
+                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo2">Ver mas</button>
+                 <div class="modal fade" id="dialogo2">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+              <div class="container-fluid">   
+                  <div class="row">       
+                    <div class="col">        
+                        <div class="card">
+                         <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 1</h3>
+              <p>Un "carousel" es una componente que muestra un conjunto de diapositivas (imágenes generalmente), avanza en forma automática cada diapositiva y luego de la última pasa a mostrar la primera.   
+Requiere tanto de CSS como Javascript..</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="BMD/img/cuadro2.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 2</h3>
+              <p>Podemos opcionalmente activar dos botones a izquierda y derecha para que el usuario pueda retroceder o avanzar diapositivas. Además de unos pequeños indicadores para elegir cualquiera de las imágenes.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 3</h3>
+              <p>Descripción de la imagen.</p>
+            </div>
+        </div>
+             <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 4</h3>
+              <p>Descripción de la imagen.</p>
+            </div> 
+        </div>
+      </div>
+      <!-- botones de desplazamiento a izquierda y derecha -->      
+      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+                        </div>          
+                    </div>
+                  </div>
+                </div>            
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
+
+            </div>
+          </div>          
+      </div>
+
+      <div class="col-md">        
+          <div class="card text-center">
+                <div class="card-header">
+              Tercer Capa
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Capa de red</h4>
+              <p class="card-text">Se encarga de identificar el enrutamiento existente entre una o más redes. Las unidades de datos se denominan paquetes, y se pueden clasificar en protocolos enrutables y protocolos de enrutamiento.7​
+
+Enrutables: viajan con los paquetes (IP, IPX, APPLETALK)
+Enrutamiento: permiten seleccionar las rutas (RIP, IGRP, EIGRP, OSPF, BGP)
+El objetivo de la capa de red es hacer que los datos lleguen desde el origen al destino, aun cuando ambos no estén conectados directamente sino que utilicen dispositivos intermedios. Los dispositivos que facilitan tal tarea se denominan encaminadores o enrutadores, aunque es más frecuente encontrarlo con el nombre en inglés routers. Los routers trabajan en esta capa, aunque pueden actuar como switch de nivel 2 en determinados casos, dependiendo de la función que se le asigne. Los firewalls actúan sobre esta capa principalmente, para descartar direcciones de determinadas máquinas o limitar el acceso a ciertas de ellas.
+
+En este nivel se realiza el direccionamiento lógico y la determinación de la ruta de los datos hasta su receptor final.</p>
+            </div>
+              <div class="card-footer">
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo3">Ver mas</button>
+              <div class="modal fade" id="dialogo3">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+              <div class="container-fluid">   
+                  <div class="row">       
+                    <div class="col">        
+                        <div class="card">
+                         <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 1</h3>
+              <p>Un "carousel" es una componente que muestra un conjunto de diapositivas (imágenes generalmente), avanza en forma automática cada diapositiva y luego de la última pasa a mostrar la primera.   
+Requiere tanto de CSS como Javascript..</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="BMD/img/cuadro2.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 2</h3>
+              <p>Podemos opcionalmente activar dos botones a izquierda y derecha para que el usuario pueda retroceder o avanzar diapositivas. Además de unos pequeños indicadores para elegir cualquiera de las imágenes.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 3</h3>
+              <p>Descripción de la imagen.</p>
+            </div>
+        </div>
+             <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 4</h3>
+              <p>Descripción de la imagen.</p>
+            </div> 
+        </div>
+      </div>
+      <!-- botones de desplazamiento a izquierda y derecha -->      
+      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+                        </div>          
+                    </div>
+                  </div>
+                </div>            
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
+            </div>
+          </div>          
+      </div>
+      
+    </div>
+      <div class="row mt-3">
+      
+      <div class="col-md">        
+          <div class="card text-center">
+            <div class="card-header">
+              Cuarta Capa
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Capa de transporte</h4>
+              <p class="card-text">Capa encargada de efectuar el transporte de los datos (que se encuentran dentro del paquete) de la máquina origen a la de destino, independizándolo del tipo de red física que esté utilizando.8​
+
+La PDU (unidad de información) de la capa 4 se llama Segmento o Datagrama, dependiendo de si corresponde a TCP o UDP, el primero orientado a conexión (transmisión verificada, eventualmente retransmitida) y el otro sin conexión (pueden perderse algunos datos por el camino).9​ Trabajan, por lo tanto, con puertos lógicos y junto con la capa red dan forma a los conocidos como Sockets IP:Puerto (ejemplo: 191.16.200.54:80).</p>
+             
+            </div>
+            <div class="card-footer">
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo4">Ver mas</button>
+              <div class="modal fade" id="dialogo4">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+              <div class="container-fluid">   
+                  <div class="row">       
+                    <div class="col">        
+                        <div class="card">
+                         <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 1</h3>
+              <p>Un "carousel" es una componente que muestra un conjunto de diapositivas (imágenes generalmente), avanza en forma automática cada diapositiva y luego de la última pasa a mostrar la primera.   
+Requiere tanto de CSS como Javascript..</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="BMD/img/cuadro2.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 2</h3>
+              <p>Podemos opcionalmente activar dos botones a izquierda y derecha para que el usuario pueda retroceder o avanzar diapositivas. Además de unos pequeños indicadores para elegir cualquiera de las imágenes.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 3</h3>
+              <p>Descripción de la imagen.</p>
+            </div>
+        </div>
+             <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 4</h3>
+              <p>Descripción de la imagen.</p>
+            </div> 
+        </div>
+      </div>
+      <!-- botones de desplazamiento a izquierda y derecha -->      
+      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+                        </div>          
+                    </div>
+                  </div>
+                </div>            
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
+            </div>
+          </div>          
+      </div>
+
+      <div class="col-md">        
+          <div class="card text-center">
+            <div class="card-header">
+              Quinta Capa
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Capa de sesión</h4>
+              <p class="card-text">Esta capa es la que se encarga de mantener y controlar el enlace establecido entre dos computadores que están transmitiendo datos de cualquier índole. Por lo tanto, el servicio provisto por esta capa es la capacidad de asegurar que, dada una sesión establecida entre dos máquinas, la misma se pueda efectuar para las operaciones definidas de principio a fin, reanudándolas en caso de interrupción.10​ En muchos casos, los servicios de la capa de sesión son parcial o totalmente prescindibles.</p>
+            </div>
+                <div class="card-footer">
+                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo5">Ver mas</button>
+              <div class="modal fade" id="dialogo5">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+              <div class="container-fluid">   
+                  <div class="row">       
+                    <div class="col">        
+                        <div class="card">
+                         <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 1</h3>
+              <p>Un "carousel" es una componente que muestra un conjunto de diapositivas (imágenes generalmente), avanza en forma automática cada diapositiva y luego de la última pasa a mostrar la primera.   
+Requiere tanto de CSS como Javascript..</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="BMD/img/cuadro2.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 2</h3>
+              <p>Podemos opcionalmente activar dos botones a izquierda y derecha para que el usuario pueda retroceder o avanzar diapositivas. Además de unos pequeños indicadores para elegir cualquiera de las imágenes.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 3</h3>
+              <p>Descripción de la imagen.</p>
+            </div>
+        </div>
+             <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 4</h3>
+              <p>Descripción de la imagen.</p>
+            </div> 
+        </div>
+      </div>
+      <!-- botones de desplazamiento a izquierda y derecha -->      
+      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+                        </div>          
+                    </div>
+                  </div>
+                </div>            
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
+            </div>
+          </div>          
+      </div>
+
+      <div class="col-md">        
+          <div class="card text-center">
+                <div class="card-header">
+              Sexta Capa
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Capa de presentación</h4>
+              <p class="card-text">El objetivo es encargarse de la representación de la información, de manera que aunque distintos equipos puedan tener diferentes representaciones internas de caracteres, los datos lleguen de manera reconocible.11​
+
+Esta capa es la primera en trabajar más el contenido de la comunicación que el cómo se establece la misma. En ella se tratan aspectos tales como la semántica y la sintaxis de los datos transmitidos, ya que distintas computadoras pueden tener diferentes formas de manejarlas. Por ejemplo, un mismo sitio web puede adecuar la presentación de sus datos según se acceda desde un computador convencional, una tableta, o un teléfono inteligente.
+
+Esta capa también permite cifrar los datos y comprimirlos. Por lo tanto, podría decirse que esta capa actúa como un traductor.</p>
+            </div>
+              <div class="card-footer">
+                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo6">Ver mas</button>
+              <div class="modal fade" id="dialogo6">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+              <div class="container-fluid">   
+                  <div class="row">       
+                    <div class="col">        
+                        <div class="card">
+                         <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 1</h3>
+              <p>Un "carousel" es una componente que muestra un conjunto de diapositivas (imágenes generalmente), avanza en forma automática cada diapositiva y luego de la última pasa a mostrar la primera.   
+Requiere tanto de CSS como Javascript..</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="BMD/img/cuadro2.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 2</h3>
+              <p>Podemos opcionalmente activar dos botones a izquierda y derecha para que el usuario pueda retroceder o avanzar diapositivas. Además de unos pequeños indicadores para elegir cualquiera de las imágenes.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 3</h3>
+              <p>Descripción de la imagen.</p>
+            </div>
+        </div>
+             <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 4</h3>
+              <p>Descripción de la imagen.</p>
+            </div> 
+        </div>
+      </div>
+      <!-- botones de desplazamiento a izquierda y derecha -->      
+      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+                        </div>          
+                    </div>
+                  </div>
+                </div>            
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
+            </div>
+          </div>          
+      </div>
+        
+          <div class="col-md">        
+          <div class="card text-center">
+                <div class="card-header">
+              Septima Capa
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Capa de aplicación</h4>
+              <p class="card-text">Ofrece a las aplicaciones la posibilidad de acceder a los servicios de las demás capas y define los protocolos que utilizan las aplicaciones para intercambiar datos, como correo electrónico (Post Office Protocol y SMTP), gestores de bases de datos y servidor de ficheros (FTP). Hay tantos protocolos como aplicaciones distintas y puesto que continuamente se desarrollan nuevas aplicaciones el número de protocolos crece sin parar.12​
+
+Cabe aclarar que el usuario normalmente no interactúa directamente con el nivel de aplicación. Suele interactuar con programas que a su vez interactúan con el nivel de aplicación pero ocultando la complejidad subyacente.</p>
+            </div>
+              <div class="card-footer">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo8">Ver mas</button>
+                  <div class="modal fade" id="dialogo8">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+              <div class="container-fluid">   
+                  <div class="row">       
+                    <div class="col">        
+                        <div class="card">
+                         <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <!-- diapositivas -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 1</h3>
+              <p>Un "carousel" es una componente que muestra un conjunto de diapositivas (imágenes generalmente), avanza en forma automática cada diapositiva y luego de la última pasa a mostrar la primera.   
+Requiere tanto de CSS como Javascript..</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="BMD/img/cuadro2.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 2</h3>
+              <p>Podemos opcionalmente activar dos botones a izquierda y derecha para que el usuario pueda retroceder o avanzar diapositivas. Además de unos pequeños indicadores para elegir cualquiera de las imágenes.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 3</h3>
+              <p>Descripción de la imagen.</p>
+            </div>
+        </div>
+             <div class="carousel-item">
+          <img class="d-block w-100" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro3.jpg" alt="">
+            <div class="carousel-caption">
+              <h3>título 4</h3>
+              <p>Descripción de la imagen.</p>
+            </div> 
+        </div>
+      </div>
+      <!-- botones de desplazamiento a izquierda y derecha -->      
+      <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+                        </div>          
+                    </div>
+                  </div>
+                </div>            
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
+
+            </div>
+          </div>          
+      </div>
     </div>
   </div>
-  <br>
-  <div class="container">   
-    <div class="card-columns">
-      <div class="card text-center border-info">
-        <div class="card-body">
-          <h4 class="card-title">Tarjetas que se muestran por columna</h4>
-          <p class="card-text">Podemos hacer que las tarjetas se apilen por columna cambiando la clase "card-group" por la clase "card-columns".</p>
-          <a href="#" class="btn btn-primary">Entrar</a>
-        </div>
-      </div>          
+    
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-      <div class="card text-center border-info">
-        <div class="card-body">
-          <h4 class="card-title">Titulo de la tarjeta 2</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
-                                tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
-                                nec tortor sit amet, maximus mattis dui. </p>
-          <a href="#" class="btn btn-primary">Entrar</a>
-        </div>
-      </div>          
-  
-      <div class="card text-center border-info">
-        <div class="card-body">
-          <h4 class="card-title">Titulo de la tarjeta 3</h4>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
-                                tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
-                                nec tortor sit amet, maximus mattis dui. </p>
-          <a href="#" class="btn btn-primary">Entrar</a>
-        </div>
-      </div>          
-    </div>
-  </div
 </body>
 </html>
